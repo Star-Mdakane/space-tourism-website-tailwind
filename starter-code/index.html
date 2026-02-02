@@ -6,14 +6,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <script src="./js/home.js" defer></script>
-  <title>Frontend Mentor | Space tourism website | Home</title>
+  <link rel="stylesheet" href="./css/output.css">
+  <title>Home | Space tourism website</title>
 </head>
 
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Home
-  </h1>
-
+  <!-- Main page -->
+  <div
+    class="w-screen max-w-360 mx-auto min-h-screen flex flex-col bg-[url(../assets/home/background-home-mobile.jpg)] bg-cover bg-no-repeat bg-center md:bg-[url(../assets/home/background-home-tablet.jpg)] lg:bg-[url(../assets/home/background-home-desktop.jpg)]">
+    <!-- Home Header -->
+    <header class="relative flex items-center justify-between h-22 md:h-24 lg:h-34">
+      <!-- Logo div -->
+      <div
+        class="flex items-center justify-between lg:w-[51.11%] md:w-[16.66%] absolute left-0 lg:top-16 lg:translate-y-0 top-1/2 -translate-y-1/2">
+        <img class="w-10 h-10 ml-10 lg:ml-16 md:w-12 md:h-12" src="./assets/shared/logo.svg" alt="">
+        <span class="hidden lg:block h-px bg-white/25 w-[76.1%]"></span>
+      </div>
+      <!-- Nav -->
+      <nav class="hidden md:block md:px-10 lg:px-16 lg:w-[51.11%] md:w-[83.33%] absolute bottom-0 right-0">
+        <ul class="flex items-center gap-12 h-24">
+          <li class="relative w-full py-11.5 group">
+            <a class="flex gap-2 text-[16px] text-white leading-[19.2%] tracking-[2px] uppercase"
+              href="../starter-code/index.html">
+              <span class="font-bold">00</span>
+              Home
+            </a>
+            <div
+              class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+            </div>
+          </li>
+          <li class="relative w-full py-11.5 group">
+            <a class="flex gap-2 text-[16px] text-white leading-[19.2%] tracking-[2px] uppercase"
+              href="../starter-code/index.html">
+              <span class="font-bold">01</span>
+              Crew
+            </a>
+            <div
+              class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+            </div>
+          </li>
+          <li class="relative w-full py-11.5 group">
+            <a class="flex gap-2 text-[16px] text-white leading-[19.2%] tracking-[2px] uppercase"
+              href="../starter-code/index.html">
+              <span class="font-bold">02</span>
+              Crew
+            </a>
+            <div
+              class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+            </div>
+          </li>
+          <li class="relative w-full py-11.5 group">
+            <a class="flex gap-2 text-[16px] text-white leading-[19.2%] tracking-[2px] uppercase"
+              href="../starter-code/index.html">
+              <span class="font-bold">03</span>
+              Technology
+            </a>
+            <div
+              class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- Burger menu -->
+      <img class="md:hidden absolute right-10 w-6 h-5.25 top-1/2 -translate-y-1/2"
+        src="./assets/shared/icon-hamburger.svg" alt="">
+    </header>
+    <!--Home Hero Section -->
+  </div>
   <!-- 00 Home
   01 Destination
   02 Crew

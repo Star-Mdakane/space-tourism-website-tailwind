@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 @theme {
-    --font-display: "Bellefair", sans-serif;
+    --default-font-family: "Bellefair", sans-serif;
     --breakpoint-sm: 480px;
     --breakpoint-md: 640px;
     --breakpoint-lg: 992px;
