@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <link rel="stylesheet" href="./css/output.css">
-
     <script src="./js/crew.js" defer></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,9 +13,101 @@
 </head>
 
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Crew
-    </h1>
+    <!--Crew Main page -->
+    <div
+        class="w-screen max-w-360 mx-auto min-h-screen flex flex-col bg-[url(../assets/crew/background-crew-mobile.jpg)] bg-cover bg-no-repeat bg-center md:bg-[url(../assets/crew/background-crew-tablet.jpg)] lg:bg-[url(../assets/crew/background-crew-desktop.jpg)]">
+        <!-- Crew Header -->
+        <header class="relative flex items-center justify-between h-22 md:h-24 lg:h-34">
+            <!-- Logo div -->
+            <div
+                class="flex items-center justify-between lg:w-[51.11%] md:w-[16.66%] absolute left-0 lg:top-16 lg:translate-y-0 top-1/2 -translate-y-1/2">
+                <img class="w-10 h-10 ml-10 lg:ml-16 md:w-12 md:h-12" src="./assets/shared/logo.svg" alt="">
+                <span class="hidden lg:block h-px bg-white/25 w-[76.1%]"></span>
+            </div>
+            <!-- Nav -->
+            <nav
+                class="hidden md:block md:px-10 lg:px-16 lg:w-[51.11%] md:w-[83.33%] absolute bottom-0 right-0 bg-white/5 backdrop-blur-[80px]">
+                <ul class="flex items-center gap-12 h-24">
+                    <li class="relative w-full py-11.5 group">
+                        <a class="flex gap-2 text-[16px] text-white leading-[19.2%] tracking-[2px] uppercase"
+                            href="../starter-code/index.html">
+                            <span class="font-bold">00</span>
+                            Home
+                        </a>
+                        <div
+                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+                        </div>
+                    </li>
+                    <li class="relative w-full py-11.5 group">
+                        <a class="flex gap-2 text-[16px] text-white leading-[19.2%] tracking-[2px] uppercase"
+                            href="../starter-code/destination.html">
+                            <span class="font-bold">01</span>
+                            Destination
+                        </a>
+                        <div
+                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+                        </div>
+                    </li>
+                    <li class="relative w-full py-11.5 group">
+                        <a class="flex gap-2 text-[16px] text-white leading-[19.2%] tracking-[2px] uppercase"
+                            href="../starter-code/crew.html">
+                            <span class="font-bold">02</span>
+                            Crew
+                        </a>
+                        <div
+                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+                        </div>
+                    </li>
+                    <li class="relative w-full py-11.5 group">
+                        <a class="flex gap-2 text-[16px] text-white leading-[19.2%] tracking-[2px] uppercase"
+                            href="../starter-code/technology.html">
+                            <span class="font-bold">03</span>
+                            Technology
+                        </a>
+                        <div
+                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Burger menu -->
+            <img class="md:hidden absolute right-10 w-6 h-5.25 top-1/2 -translate-y-1/2"
+                src="./assets/shared/icon-hamburger.svg" alt="">
+        </header>
+        <!-- Crew Hero Section -->
+        <div
+            class="flex flex-col flex-1 justify-center lg:items-end items-center mx-auto md:gap-16.5 lg:flex-row  w-[87.2%] md:w-[87%] lg:w-[77.1%] lg:flex-none lg:h-158 lg:my-auto lg:gap-7.5">
+            <!--Destination Page Title -->
+            <p
+                class="text-white text-[16px] uppercase md:text-[20px] text-center leading-[32.1%] md:leading-[auto] md:tracking-[4px] lg:text-left lg:text-[28px]">
+                <span class="font-bold opacity-50 mr-6">02</span>
+                Meet your crew
+            </p>
+
+            <!-- Crew Hero Content -->
+            <div
+                class="flex flex-col justify-end gap-6 h-73.5 md:mx-auto md:w-lg md:h-83.5 lg:h-85.75 lg:justify-start lg:w-135">
+                <h1
+                    class="text-white text-center text-[80px] md:text-[144px] md:leading-[171.9%] uppercase lg:text-left">
+                    Space
+                </h1>
+                <p class="text-[15px] text-blue-300 text-center md:text-[16px] leading-[180%] lg:text-left">
+                    Let’s face it; if you want to go to space, you might as well genuinely go to
+                    outer space and not hover kind of on the edge of it. Well sit back, and relax
+                    because we’ll give you a truly out of this world experience!
+                </p>
+            </div>
+
+            <!-- Crew Hero Image -->
+            <div
+                class="flex items-center justify-center w-full md:w-lg md:h-68 h-95.5 lg:h-85.75 lg:justify-end lg:w-135">
+                <div
+                    class="flex items-center justify-center text-[18px] md:text-[32px] md:leading-normal text-blue-900 w-36 md:w-68 h-36 md:h-68 bg-white rounded-full uppercase cursor-pointer ring-0 hover:ring-70 hover:ring-white/10 transition-all duration-300">
+                    Explore
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
