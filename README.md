@@ -46,6 +46,17 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
+1. I think I will use the JS method and test my fetch skills rather than using html heavily which would require loads of pages, I think 5 or 4 pages for each title page.
+2. My approach will be to have 4 html pages and use 4 JS pages only. Having 1 JS page seems straightforwward so I want to learn using multiple JS pages also.
+3. I first designed the home page using tailwind mobile first
+- Problems encountered:
+-Getting to display the background I mages. I thought my root was the html page whilst it was the css I output so it kept on giving me 404 till I checked te dev tools and network section.
+-The nav underline I tried using after psuedo and failed till I went to group.
+-The hover on the home image I tried using box shadow bbut to no avail, so I used a ring instead.
+2. Moving on to the other pages
+- After designing the main home page I will be using it's skeleton to design the base structures of the other 3 pages and take it from there.
+4. Just redid the home page since it was off from the other pages. Though some weird screen sizes do not work but most of them do.
+
 
 ### Built with
 

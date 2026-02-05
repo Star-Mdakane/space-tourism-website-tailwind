@@ -42,7 +42,7 @@
                     <li class="relative w-full py-11.5 group">
                         <a class="flex gap-2 text-[16px] text-white leading-[19.2%] tracking-[2px] uppercase"
                             href="../starter-code/destination.html">
-                            <span class="font-bold">01</span>
+                            <span class="font-bold hidden">01</span>
                             Destination
                         </a>
                         <div
@@ -76,37 +76,98 @@
                 src="./assets/shared/icon-hamburger.svg" alt="">
         </header>
 
+        <!--Destination Page Title -->
+        <p
+            class="text-white text-[16px] uppercase md:text-[20px] text-center md:text-start leading-[auto] md:tracking-[4px] lg:text-left lg:text-[28px]">
+            <span class="font-bold opacity-50 mr-6">01</span>
+            Pick your destination
+        </p>
+
         <!--Destination Hero Section -->
         <div
-            class="flex flex-col flex-1 justify-center lg:items-end items-center mx-auto md:gap-16.5 lg:flex-row  w-[87.2%] md:w-[87%] lg:w-[77.1%] lg:flex-none lg:h-158 lg:my-auto lg:gap-7.5">
-            <!--Destination Page Title -->
-            <p
-                class="text-white text-[16px] uppercase md:text-[20px] text-center leading-[32.1%] md:leading-[auto] md:tracking-[4px] lg:text-left lg:text-[28px]">
-                <span class="font-bold opacity-50 mr-6">01</span>
-                Pick your destination
-            </p>
+            class="flex flex-col flex-1 justify-center lg:items-end items-center mx-auto md:gap-16.5 lg:flex-row  w-[87.2%] md:w-[89.6%] lg:w-[77.1%] lg:flex-none lg:h-183.5 lg:my-auto lg:gap-7.5">
+
 
             <!-- Destination Hero Image -->
             <div
-                class="flex items-center justify-center w-full md:w-lg md:h-68 h-95.5 lg:h-85.75 lg:justify-end lg:w-135">
-                <div
-                    class="flex items-center justify-center text-[18px] md:text-[32px] md:leading-normal text-blue-900 w-36 md:w-68 h-36 md:h-68 bg-white rounded-full uppercase cursor-pointer ring-0 hover:ring-70 hover:ring-white/10 transition-all duration-300">
-                    Explore
+                class="flex items-center justify-center w-full md:w-full h-50.5 md:h-96 lg:h-full lg:justify-end lg:w-135">
+                <div id="destination-img"
+                    class="flex items-center justify-center w-37.5 h-37.5 md:w-75 md:h-75 lg:h-120 lg:w-120 transition-all duration-300">
+                    <img src="./assets/destination/image-moon.webp" alt="">
                 </div>
             </div>
 
             <!-- Destination Hero Content -->
-            <div
-                class="flex flex-col justify-end gap-6 h-73.5 md:mx-auto md:w-lg md:h-83.5 lg:h-85.75 lg:justify-start lg:w-135">
-                <h1
-                    class="text-white text-center text-[80px] md:text-[144px] md:leading-[171.9%] uppercase lg:text-left">
-                    Space
+            <div class="flex flex-col gap-8 h-116.5 md:mx-auto md:w-lg md:h-96 lg:h-full lg:justify-start lg:w-135">
+                <!--Destination Nav -->
+                <nav class="block lg:w-[51.11%] md:w-[83.33%]">
+                    <ul class="flex items-center gap-8">
+                        <li id="moon" class="relative w-full group">
+                            <a class="flex gap-2 text-[14px] text-white/50 leading-[auto] uppercase" href="#">
+                                Moon
+                            </a>
+                            <div
+                                class="absolute bottom-0 left-0 h-1 w-[60%] bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+                            </div>
+                        </li>
+                        <li id="mars" class="relative w-full group">
+                            <a class="flex gap-2 text-[14px] text-white/50 leading-[auto] uppercase" href="#">
+                                Mars
+                            </a>
+                            <div
+                                class="absolute bottom-0 left-0 h-1 w-[50%] bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+                            </div>
+                        </li>
+                        <li id="europa" class="relative w-full group">
+                            <a class="flex gap-2 text-[14px] text-white/50 leading-[auto] uppercase" href="#">
+
+                                Europa
+                            </a>
+                            <div
+                                class="absolute bottom-0 left-0 h-1 w-[70%] bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+                            </div>
+                        </li>
+                        <li id="titan" class="relative w-full group">
+                            <a class="flex gap-2 text-[14px] text-white/50 leading-[auto] uppercase" href="#">
+                                Titan
+                            </a>
+                            <div
+                                class="absolute bottom-0 left-0 h-1 w-[50%] bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Destination Title -->
+                <h1 id="destination-title"
+                    class="text-white text-center text-[56px] leading-[auto] md:text-[80px] lg:text-[96px] uppercase lg:text-left">
+                    Moon
                 </h1>
-                <p class="text-[15px] text-blue-300 text-center md:text-[16px] leading-[180%] lg:text-left">
-                    Let’s face it; if you want to go to space, you might as well genuinely go to
-                    outer space and not hover kind of on the edge of it. Well sit back, and relax
-                    because we’ll give you a truly out of this world experience!
+                <!-- Destination Description -->
+                <p
+                    class="text-[15px] text-white/50 text-center md:text-[16px] leading-[180%] lg:text-[18px] lg:text-left pb-6 border-b-2 border-b-white/10">
+                    See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain
+                    perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2
+                    and Apollo 11 landing sites.
                 </p>
+                <!-- Destination Distance -->
+                <div class="w-full flex flex-col md:flex-row gap-6 md:justify-around">
+                    <div class="flex flex-col items-center">
+                        <p class="text-white/50 text-[14px] leading-[auto] uppercase">
+                            avg. distance
+                        </p>
+                        <p id="distance" class="text-[28px] leading-[auto] text-white uppercase">
+                            384,400 km
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <p class="text-white/50 text-[14px] leading-[auto] uppercase">
+                            est. travel time
+                        </p>
+                        <p id="time" class="text-[28px] leading-[auto] text-white uppercase">
+                            3 days
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
