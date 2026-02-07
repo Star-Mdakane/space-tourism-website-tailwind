@@ -56,7 +56,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 2. Moving on to the other pages
 - After designing the main home page I will be using it's skeleton to design the base structures of the other 3 pages and take it from there.
 4. Just redid the home page since it was off from the other pages. Though some weird screen sizes do not work but most of them do.
-
+5. After a few days with my display breaking at certain breakpoints.
+- Firstly it was the backround image. I had placed it on the main display div and it kept breaking at height about 850px and moved it to the bod tag which resolved the issue
+- Then it was breaking at a width and I initially thought it was some strange screen sizes but found out it was breaking at large breakpoint. After a bit of troubleshooting I discovered that it was the nav which was breaking the display. I changed the width of the nav from a percentage value to auto which seems to have fixed the problem.
 
 ### Built with
 

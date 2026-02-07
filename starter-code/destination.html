@@ -9,14 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/output.css">
     <script src="./js/destination.js" defer></script>
-    <link rel="stylesheet" href="./css/output.css">
     <title>Destination | Space tourism website </title>
 </head>
 
 <body>
     <!--Destination Main page -->
     <div
-        class="w-screen max-w-360 mx-auto min-h-screen flex flex-col bg-[url(../assets/destination/background-destination-mobile.jpg)] bg-cover bg-no-repeat bg-center md:bg-[url(../assets/destination/background-destination-tablet.jpg)] lg:bg-[url(../assets/destination/background-destination-desktop.jpg)]">
+        class="max-w-360 w-full mx-auto min-h-screen flex flex-col bg-[url(../assets/destination/background-destination-mobile.jpg)] bg-cover bg-no-repeat bg-center md:bg-[url(../assets/destination/background-destination-tablet.jpg)] lg:bg-[url(../assets/destination/background-destination-desktop.jpg)]">
         <!-- Destination Header -->
         <header class="relative flex items-center justify-between h-22 md:h-24 lg:h-34">
             <!-- Logo div -->
@@ -27,7 +26,7 @@
             </div>
             <!-- Nav -->
             <nav
-                class="hidden md:block md:px-10 lg:px-16 lg:w-[51.11%] md:w-[83.33%] absolute bottom-0 right-0 bg-white/5 backdrop-blur-[80px]">
+                class="hidden md:block md:px-10 lg:px-16 lg:w-auto md:w-[83.33%] absolute bottom-0 right-0 bg-white/5 backdrop-blur-[80px]">
                 <ul class="flex items-center gap-12 h-24">
                     <li class="relative w-full py-11.5 group">
                         <a class="flex gap-2 text-[16px] text-white leading-[19.2%] tracking-[2px] uppercase"
@@ -78,30 +77,32 @@
 
         <!--Destination Page Title -->
         <p
-            class="text-white text-[16px] uppercase md:text-[20px] text-center md:text-start leading-[auto] md:tracking-[4px] lg:text-left lg:text-[28px]">
+            class="text-white text-[16px] uppercase md:text-[20px] text-center md:text-left leading-[auto] md:tracking-[4px] lg:text-left lg:text-[28px] my-6 md:ml-[5.2%] md:mt-10 lg:mt-12">
             <span class="font-bold opacity-50 mr-6">01</span>
             Pick your destination
         </p>
 
+
         <!--Destination Hero Section -->
         <div
-            class="flex flex-col flex-1 justify-center lg:items-end items-center mx-auto md:gap-16.5 lg:flex-row  w-[87.2%] md:w-[89.6%] lg:w-[77.1%] lg:flex-none lg:h-183.5 lg:my-auto lg:gap-7.5">
+            class="flex flex-col justify-center lg:items-end mx-auto md:gap-16.5 lg:flex-row  w-[87.2%] md:w-[89.6%] lg:w-[77.1%] lg:flex-none lg:h-183.5 lg:my-auto lg:gap-8">
 
 
             <!-- Destination Hero Image -->
             <div
-                class="flex items-center justify-center w-full md:w-full h-50.5 md:h-96 lg:h-full lg:justify-end lg:w-135">
-                <div id="destination-img"
-                    class="flex items-center justify-center w-37.5 h-37.5 md:w-75 md:h-75 lg:h-120 lg:w-120 transition-all duration-300">
-                    <img src="./assets/destination/image-moon.webp" alt="">
+                class="flex items-center justify-center w-full md:w-full h-50.5 md:h-96 lg:h-183.5 lg:justify-end lg:w-135">
+                <div id="destination-img" class="w-full h-full flex items-center justify-center transition">
+                    <img class="w-37.5 h-37.5 md:w-75 md:h-75 lg:h-120 lg:w-120"
+                        src="./assets/destination/image-moon.webp" alt="">
                 </div>
             </div>
 
             <!-- Destination Hero Content -->
-            <div class="flex flex-col gap-8 h-116.5 md:mx-auto md:w-lg md:h-96 lg:h-full lg:justify-start lg:w-135">
+            <div
+                class="flex flex-col gap-6 h-116.5 md:mx-auto md:w-lg md:h-96 lg:h-183.5 lg:justify-center lg:w-135 mb-6 md:mb-10 lg:mb-12">
                 <!--Destination Nav -->
-                <nav class="block lg:w-[51.11%] md:w-[83.33%]">
-                    <ul class="flex items-center gap-8">
+                <nav class="block mx-auto lg:w-[51.11%] md:w-[83.33%] lg:ml-0">
+                    <ul class="flex w-full items-center gap-8">
                         <li id="moon" class="relative w-full group">
                             <a class="flex gap-2 text-[14px] text-white/50 leading-[auto] uppercase" href="#">
                                 Moon
@@ -150,16 +151,16 @@
                     and Apollo 11 landing sites.
                 </p>
                 <!-- Destination Distance -->
-                <div class="w-full flex flex-col md:flex-row gap-6 md:justify-around">
-                    <div class="flex flex-col items-center">
-                        <p class="text-white/50 text-[14px] leading-[auto] uppercase">
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-6 lg:place-items-start">
+                    <div class="flex flex-col items-center lg:items-start">
+                        <p class="text-white/50 text-[14px] leading-[auto] uppercase lg:text-left">
                             avg. distance
                         </p>
-                        <p id="distance" class="text-[28px] leading-[auto] text-white uppercase">
+                        <p id="distance" class="text-[28px] leading-[auto] text-white uppercase lg:text-left">
                             384,400 km
                         </p>
                     </div>
-                    <div class="flex flex-col items-center">
+                    <div class="flex flex-col items-center lg:items-start">
                         <p class="text-white/50 text-[14px] leading-[auto] uppercase">
                             est. travel time
                         </p>
