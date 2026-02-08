@@ -59,6 +59,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 5. After a few days with my display breaking at certain breakpoints.
 - Firstly it was the backround image. I had placed it on the main display div and it kept breaking at height about 850px and moved it to the bod tag which resolved the issue
 - Then it was breaking at a width and I initially thought it was some strange screen sizes but found out it was breaking at large breakpoint. After a bit of troubleshooting I discovered that it was the nav which was breaking the display. I changed the width of the nav from a percentage value to auto which seems to have fixed the problem.
+6. I dopn't know if technology was simple or I am getting used to this but I had no challenges and it took way less time to complete.
+
 
 ### Built with
 
