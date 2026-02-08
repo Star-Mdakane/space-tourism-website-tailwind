@@ -4,13 +4,8 @@ const links = document.querySelectorAll("nav a");
 const img = document.getElementById("crew-img");
 const description = document.getElementById("crew-description");
 const member = document.getElementById("crew-member");
+const rank = document.getElementById("crew-rank");
 
-buttons.forEach(btn => {
-    btn.addEventListener("click", () => {
-        buttons.forEach(button => button.parentElement.classList.remove("isActive"));
-        btn.parentElement.classList.add("isActive");
-    })
-});
 
 links.forEach(link => {
     if (link.href.includes(currentPage)) {
@@ -38,6 +33,22 @@ async function loadData() {
 
 loadData();
 
-const loadCrew = (crew) => {
-    console.log(crew);
+const loadCrew = (crews) => {
+
+    buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            buttons.forEach(button => button.parentElement.classList.remove("isActive"));
+            btn.parentElement.classList.add("isActive");
+
+            // Getting the array with the destination items
+            const targetId = btn.id;
+            const crew = crews.find(crw => crw.name.toLowerCase().includes(targetId.toLowerCase()));
+
+            console.log(crew.images.webp);
+            img.src = crew.images.webp;
+            rank.textContent = crew.role;
+            member.textContent = crew.name;
+            description.textContent = crew.bio;
+        })
+    });
 };

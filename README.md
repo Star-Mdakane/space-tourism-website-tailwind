@@ -62,6 +62,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 6. I dopn't know if technology was simple or I am getting used to this but I had no challenges and it took way less time to complete.
 7. Next up was the script. First I tried to load fetch from home page js and that I would be able to use the functions inside that script but it is not possible, so I had to move the fetch to every single script.
 8. I started with the destinations page, not hard but I had to remeber the find to return the array which has the Id of the link that I have clicked.
+9. On the crew page the problem was that the image was a bg image instead of an image so I had trouble removing or replacing the string to add it to bg image, so I changed it.
 
 
 ### Built with
