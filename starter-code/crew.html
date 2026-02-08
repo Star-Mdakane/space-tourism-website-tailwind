@@ -33,7 +33,7 @@
                             Home
                         </a>
                         <div
-                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100 group-[.isActive]:bg-white group-[.isActive]:opacity-100">
                         </div>
                     </li>
                     <li class="relative w-full py-11.5 group">
@@ -43,7 +43,7 @@
                             Destination
                         </a>
                         <div
-                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100 group-[.isActive]:bg-white group-[.isActive]:opacity-100">
                         </div>
                     </li>
                     <li class="relative w-full py-11.5 group">
@@ -53,7 +53,7 @@
                             Crew
                         </a>
                         <div
-                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100 group-[.isActive]:bg-white group-[.isActive]:opacity-100">
                         </div>
                     </li>
                     <li class="relative w-full py-11.5 group">
@@ -63,7 +63,7 @@
                             Technology
                         </a>
                         <div
-                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100 group-[.isActive]:bg-white group-[.isActive]:opacity-100">
                         </div>
                     </li>
                 </ul>
@@ -73,7 +73,7 @@
                 src="./assets/shared/icon-hamburger.svg" alt="">
         </header>
 
-        <!--Technology Page Title -->
+        <!--Crew Page Title -->
         <p
             class="text-white text-[16px] uppercase md:text-[20px] text-center md:text-left leading-[auto] md:tracking-[4px] lg:text-left lg:text-[28px] my-6 md:ml-[5.2%] md:mt-10 lg:mt-12">
             <span class="font-bold opacity-50 mr-6">02</span>
@@ -81,15 +81,15 @@
         </p>
 
 
-        <!--Technology Hero Section -->
+        <!--Crew Hero Section -->
         <div
             class="flex flex-col justify-center mx-auto gap-8 lg:flex-row lg:items-center  w-[87.2%] md:w-[89.6%] lg:w-[77.01%] lg:flex-none lg:h-183.5 lg:gap-8 lg:mb-12">
 
-            <!-- Technology Hero Pagination -->
+            <!-- Crew Hero Pagination -->
             <div
                 class="flex flex-col items-center gap-10 h-80 md:mx-auto md:w-lg md:h-96  lg:w-158.75 lg:h-full lg:justify-end pt-10 lg:pt-0 lg:mb-12 lg:gap-60">
 
-                <!-- Technology Content-->
+                <!-- Crew Content-->
 
                 <div class="flex flex-col gap-4 lg:mb-0">
                     <div class="flex flex-col">
@@ -99,64 +99,59 @@
                             Commander
                         </p>
 
-                        <p id="terminology"
+                        <p id="crew-member"
                             class="uppercase text-[24px] text-white text-center leading-[auto] md:text-[40px] lg:text-[56px] lg:text-left">
                             Douglas Hurley
                         </p>
 
                     </div>
                     <!-- Pagination Description -->
-                    <p
+                    <p id="crew-description"
                         class="text-[15px] text-white/50  text-center md:text-[16px] leading-[180%] lg:text-[18px] lg:text-left pb-6">
                         Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA
                         astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
                     </p>
                 </div>
 
-                <!--Technology Nav -->
+                <!--Crew Nav -->
                 <nav class="block mx-auto lg:w-[51.11%] md:w-[83.33%] lg:mx-0 lg:mr-auto">
                     <ul class="w-full flex items-center justify-center gap-8 lg:items-start lg:justify-start">
                         <li id="one"
-                            class="flex border border-white/50 w-2.5 h-2.5 lg:w-3.75 lg:h-3.75 rounded-full overflow-hidden">
-                            <button
-                                class="bg-white/50 leading-[auto] uppercase hover:bg-white hover:text-blue-900 w-full h-full">
-
+                            class="group flex border border-white/50 w-2.5 h-2.5 lg:w-3.75 lg:h-3.75 rounded-full overflow-hidden">
+                            <button data-crew-btn
+                                class="bg-white/50 leading-[auto] uppercase hover:bg-white/70 hover:text-blue-900 w-full h-full cursor-pointer ">
                             </button>
 
                         </li>
                         <li id="two"
-                            class="flex border border-white/50 w-2.5 h-2.5 lg:w-3.75 lg:h-3.75 rounded-full overflow-hidden">
-                            <button
-                                class=" bg-white/50 leading-[auto] uppercase hover:bg-white hover:text-blue-900 w-full h-full">
-
+                            class="group flex border border-white/50 w-2.5 h-2.5 lg:w-3.75 lg:h-3.75 rounded-full overflow-hidden">
+                            <button data-crew-btn
+                                class=" bg-white/50 leading-[auto] uppercase hover:bg-white/70 hover:text-blue-900 w-full h-full cursor-pointer ">
                             </button>
 
                         </li>
                         <li id="three"
-                            class="flex border border-white/50 w-2.5 h-2.5 lg:w-3.75 lg:h-3.75 rounded-full overflow-hidden">
-                            <button
-                                class=" bg-white/50 leading-[auto] uppercase hover:bg-white hover:text-blue-900 w-full h-full">
-
+                            class="group flex border border-white/50 w-2.5 h-2.5 lg:w-3.75 lg:h-3.75 rounded-full overflow-hidden">
+                            <button data-crew-btn
+                                class=" bg-white/50 leading-[auto] uppercase hover:bg-white/70 hover:text-blue-900 w-full h-full cursor-pointer ">
                             </button>
                         </li>
                         <li id="three"
-                            class="flex border border-white/50 w-2.5 h-2.5 lg:w-3.75 lg:h-3.75 rounded-full overflow-hidden">
-                            <button
-                                class=" bg-white/50 leading-[auto] uppercase hover:bg-white hover:text-blue-900 w-full h-full">
-
+                            class="group flex border border-white/50 w-2.5 h-2.5 lg:w-3.75 lg:h-3.75 rounded-full overflow-hidden">
+                            <button data-crew-btn
+                                class=" bg-white/50 leading-[auto] uppercase hover:bg-white/70 hover:text-blue-900 w-full h-full cursor-pointer ">
                             </button>
                         </li>
                     </ul>
                 </nav>
 
             </div>
-            <!-- Technology Hero Image -->
-            <div
+            <!-- Crew Hero Image -->
+            <div id="crew-img"
                 class="flex items-center justify-center w-full lg:w-152 mx-auto lg:mx-0 h-85 md:h-116 lg:h-full lg:justify-end mb-12">
                 <div id="destination-img"
                     class="min-w-67.75 max-w-134 w-67.75 h-full md:w-111.5 lg:h-150 flex items-center justify-center transition bg-[url(../assets/crew/image-douglas-hurley.webp)] bg-top bg-no-repeat bg-cover">
-                    <!-- <img class="w-full h-full lg:h-120 lg:w-120"
-                        src="./assets/technology/image-launch-vehicle-portrait.jpg" alt=""> -->
+
                 </div>
             </div>
         </div>

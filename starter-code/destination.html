@@ -35,7 +35,7 @@
                             Home
                         </a>
                         <div
-                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100 group-[.isActive]:bg-white group-[.isActive]:opacity-100">
                         </div>
                     </li>
                     <li class="relative w-full py-11.5 group">
@@ -45,7 +45,7 @@
                             Destination
                         </a>
                         <div
-                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100 group-[.isActive]:bg-white group-[.isActive]:opacity-100">
                         </div>
                     </li>
                     <li class="relative w-full py-11.5 group">
@@ -55,7 +55,7 @@
                             Crew
                         </a>
                         <div
-                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100 group-[.isActive]:bg-white group-[.isActive]:opacity-100">
                         </div>
                     </li>
                     <li class="relative w-full py-11.5 group">
@@ -65,7 +65,7 @@
                             Technology
                         </a>
                         <div
-                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100 group-[.isActive]:bg-white group-[.isActive]:opacity-100">
                         </div>
                     </li>
                 </ul>
@@ -91,8 +91,8 @@
             <!-- Destination Hero Image -->
             <div
                 class="flex items-center justify-center w-full md:w-full h-50.5 md:h-96 lg:h-183.5 lg:justify-end lg:w-135">
-                <div id="destination-img" class="w-full h-full flex items-center justify-center transition">
-                    <img class="w-37.5 h-37.5 md:w-75 md:h-75 lg:h-120 lg:w-120"
+                <div class="w-full h-full flex items-center justify-center transition">
+                    <img id="destination-img" class="w-37.5 h-37.5 md:w-75 md:h-75 lg:h-120 lg:w-120"
                         src="./assets/destination/image-moon.webp" alt="">
                 </div>
             </div>
@@ -103,37 +103,40 @@
                 <!--Destination Nav -->
                 <nav class="block mx-auto lg:w-[51.11%] md:w-[83.33%] lg:ml-0">
                     <ul class="flex w-full items-center gap-8">
-                        <li id="moon" class="relative w-full group">
-                            <button class="flex gap-2 text-[14px] text-white/50 leading-[auto] uppercase">
+                        <li class="relative w-full group">
+                            <button data-destination-btn id="moon"
+                                class="flex pb-2.5 gap-2 text-[14px] text-white/50 leading-[auto] uppercase cursor-pointer">
                                 Moon
                             </button>
                             <div
-                                class="absolute bottom-0 left-0 h-1 w-[60%] bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+                                class="absolute bottom-0 left-0 h-1 w-[60%] lg:w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100 group-[.isActive]:bg-white group-[.isActive]:text-blue-900 group-[.isActive]:opacity-100">
                             </div>
                         </li>
-                        <li id="mars" class="relative w-full group">
-                            <button class="flex gap-2 text-[14px] text-white/50 leading-[auto] uppercase">
+                        <li class="relative w-full group">
+                            <button data-destination-btn id="mars"
+                                class="flex pb-2.5 gap-2 text-[14px] text-white/50 leading-[auto] uppercase cursor-pointer">
                                 Mars
                             </button>
                             <div
-                                class="absolute bottom-0 left-0 h-1 w-[50%] bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+                                class="absolute bottom-0 left-0 h-1 w-[50%] lg:w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100 group-[.isActive]:bg-white  group-[.isActive]:opacity-100">
                             </div>
                         </li>
-                        <li id="europa" class="relative w-full group">
-                            <button class="flex gap-2 text-[14px] text-white/50 leading-[auto] uppercase">
-
+                        <li class="relative w-full group">
+                            <button data-destination-btn id="europa"
+                                class="flex pb-2.5 gap-2 text-[14px] text-white/50 leading-[auto] uppercase cursor-pointer">
                                 Europa
                             </button>
                             <div
-                                class="absolute bottom-0 left-0 h-1 w-[70%] bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+                                class="absolute bottom-0 left-0 h-1 w-[70%] lg:w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100 group-[.isActive]:bg-white  group-[.isActive]:opacity-100">
                             </div>
                         </li>
-                        <li id="titan" class="relative w-full group">
-                            <button class="flex gap-2 text-[14px] text-white/50 leading-[auto] uppercase">
+                        <li class="relative w-full group">
+                            <button data-destination-btn id="titan"
+                                class="flex pb-2.5 gap-2 text-[14px] text-white/50 leading-[auto] uppercase cursor-pointer">
                                 Titan
                             </button>
                             <div
-                                class="absolute bottom-0 left-0 h-1 w-[50%] bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+                                class="absolute bottom-0 left-0 h-1 w-[50%] lg:w-full  bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100 group-[.isActive]:bg-white  group-[.isActive]:opacity-100">
                             </div>
                         </li>
                     </ul>
@@ -144,7 +147,7 @@
                     Moon
                 </h1>
                 <!-- Destination Description -->
-                <p
+                <p id="destination-description"
                     class="text-[15px] text-white/50 text-center md:text-[16px] leading-[180%] lg:text-[18px] lg:text-left pb-6 border-b-2 border-b-white/10">
                     See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain
                     perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2
@@ -156,7 +159,8 @@
                         <p class="text-white/50 text-[14px] leading-[auto] uppercase lg:text-left">
                             avg. distance
                         </p>
-                        <p id="distance" class="text-[28px] leading-[auto] text-white uppercase lg:text-left">
+                        <p id="destination-distance"
+                            class="text-[28px] leading-[auto] text-white uppercase lg:text-left">
                             384,400 km
                         </p>
                     </div>
@@ -164,7 +168,7 @@
                         <p class="text-white/50 text-[14px] leading-[auto] uppercase">
                             est. travel time
                         </p>
-                        <p id="time" class="text-[28px] leading-[auto] text-white uppercase">
+                        <p id="destination-time" class="text-[28px] leading-[auto] text-white uppercase">
                             3 days
                         </p>
                     </div>

@@ -60,6 +60,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Firstly it was the backround image. I had placed it on the main display div and it kept breaking at height about 850px and moved it to the bod tag which resolved the issue
 - Then it was breaking at a width and I initially thought it was some strange screen sizes but found out it was breaking at large breakpoint. After a bit of troubleshooting I discovered that it was the nav which was breaking the display. I changed the width of the nav from a percentage value to auto which seems to have fixed the problem.
 6. I dopn't know if technology was simple or I am getting used to this but I had no challenges and it took way less time to complete.
+7. Next up was the script. First I tried to load fetch from home page js and that I would be able to use the functions inside that script but it is not possible, so I had to move the fetch to every single script.
+8. I started with the destinations page, not hard but I had to remeber the find to return the array which has the Id of the link that I have clicked.
 
 
 ### Built with

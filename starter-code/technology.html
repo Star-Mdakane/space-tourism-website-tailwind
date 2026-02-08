@@ -34,7 +34,7 @@
                             Home
                         </a>
                         <div
-                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100 group-[.isActive]:bg-white group-[.isActive]:opacity-100">
                         </div>
                     </li>
                     <li class="relative w-full py-11.5 group">
@@ -44,7 +44,7 @@
                             Destination
                         </a>
                         <div
-                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100 group-[.isActive]:bg-white group-[.isActive]:opacity-100">
                         </div>
                     </li>
                     <li class="relative w-full py-11.5 group">
@@ -54,7 +54,7 @@
                             Crew
                         </a>
                         <div
-                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100 group-[.isActive]:bg-white group-[.isActive]:opacity-100">
                         </div>
                     </li>
                     <li class="relative w-full py-11.5 group">
@@ -64,7 +64,7 @@
                             Technology
                         </a>
                         <div
-                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100">
+                            class="absolute bottom-0 left-0 h-1 w-full bg-white/50 opacity-0 origin-left transition-all group-hover:opacity-100 group-[.isActive]:bg-white group-[.isActive]:opacity-100">
                         </div>
                     </li>
                 </ul>
@@ -90,10 +90,8 @@
             <!-- Technology Hero Image -->
             <div
                 class="flex items-center justify-center w-screen lg:w-152 mx-auto lg:mx-0 h-64.5 md:h-88 lg:h-full lg:justify-end translate-x-[-6.4%] md:translate-x-[-5.2%] lg:translate-x-0 mt-16">
-                <div id="destination-img"
+                <div id="tech-img"
                     class="w-full h-full lg:h-150 flex items-center justify-center transition bg-[url(../assets/technology/image-launch-vehicle-portrait.jpg)] bg-center bg-no-repeat bg-cover">
-                    <!-- <img class="w-full h-full lg:h-120 lg:w-120"
-                        src="./assets/technology/image-launch-vehicle-portrait.jpg" alt=""> -->
                 </div>
             </div>
 
@@ -104,25 +102,25 @@
                 <nav class="block mx-auto lg:w-[51.11%] md:w-[83.33%] lg:ml-0">
                     <ul class="flex lg:flex-col w-full items-center justify-center gap-8">
                         <li id="one"
-                            class="flex border border-white/50 w-10 h-10 md:w-14 md:h-14 lg:w-20 lg:h-20 rounded-full overflow-hidden">
-                            <button
-                                class="flex items-center justify-center text-[18px] text-white leading-[auto] uppercase hover:bg-white hover:text-blue-900 w-full h-full">
+                            class="group flex border border-white/50 w-10 h-10 md:w-14 md:h-14 lg:w-20 lg:h-20 rounded-full overflow-hidden hover:border-white">
+                            <button data-tech-btn
+                                class="flex items-center justify-center text-[18px] text-white leading-[auto] uppercase  group-[.isActive]:bg-white group-[.isActive]:text-blue-900 w-full h-full cursor-pointer">
                                 1
                             </button>
 
                         </li>
                         <li id="two"
-                            class="flex border border-white/50 w-10 h-10 md:w-14 md:h-14 lg:w-20 lg:h-20 rounded-full overflow-hidden">
-                            <button
-                                class="flex items-center justify-center text-[18px] text-white leading-[auto] uppercase hover:bg-white hover:text-blue-900 w-full h-full">
+                            class="group flex border border-white/50 w-10 h-10 md:w-14 md:h-14 lg:w-20 lg:h-20 rounded-full overflow-hidden hover:border-white">
+                            <button data-tech-btn
+                                class="flex items-center justify-center text-[18px] text-white leading-[auto] uppercase  group-[.isActive]:bg-white group-[.isActive]:text-blue-900 w-full h-full cursor-pointer">
                                 2
                             </button>
 
                         </li>
                         <li id="three"
-                            class="flex border border-white/50 w-10 h-10 md:w-14 md:h-14 lg:w-20 lg:h-20 rounded-full overflow-hidden">
-                            <button
-                                class="flex items-center justify-center text-[18px] text-white leading-[auto] uppercase hover:bg-white hover:text-blue-900 w-full h-full">
+                            class="group flex border border-white/50 w-10 h-10 md:w-14 md:h-14 lg:w-20 lg:h-20 rounded-full overflow-hidden hover:border-white">
+                            <button data-tech-btn
+                                class="flex items-center justify-center text-[18px] text-white leading-[auto] uppercase group-[.isActive]:bg-white group-[.isActive]:text-blue-900 w-full h-full cursor-pointer">
                                 3
                             </button>
 
@@ -140,14 +138,14 @@
                             The terminology...
                         </p>
 
-                        <p id="terminology"
+                        <p id="tech-terminology"
                             class="uppercase text-[24px] text-white text-center leading-[auto] md:text-[40px] lg:text-[56px]">
                             Launch vehicle
                         </p>
 
                     </div>
                     <!-- Pagination Description -->
-                    <p
+                    <p id="tech-description"
                         class="text-[15px] text-white  text-center md:text-[16px] leading-[180%] lg:text-[18px] lg:text-left pb-6 border-b-2 border-b-white/10">
                         A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from
                         Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most
