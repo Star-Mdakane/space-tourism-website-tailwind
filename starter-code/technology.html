@@ -89,9 +89,10 @@
 
             <!-- Technology Hero Image -->
             <div
-                class="flex items-center justify-center w-screen lg:w-152 mx-auto lg:mx-0 h-64.5 md:h-88 lg:h-full lg:justify-end translate-x-[-6.4%] md:translate-x-[-5.2%] lg:translate-x-0 mt-16">
-                <div id="tech-img"
-                    class="w-full h-full lg:h-150 flex items-center justify-center transition bg-[url(../assets/technology/image-launch-vehicle-portrait.jpg)] bg-center bg-no-repeat bg-cover">
+                class="flex items-center justify-center mx-auto w-screen lg:w-152 lg:mx-0 lg:justify-end translate-x-[-6.4%] md:translate-x-[-5.2%] lg:translate-x-0 mt-16">
+                <div class="flex items-center justify-center transition">
+                    <img id="tech-img" class="h-64.5 md:h-88 lg:h-150 w-screen lg:w-152"
+                        src="./assets/technology/image-launch-vehicle-portrait.jpg" alt="">
                 </div>
             </div>
 
@@ -101,25 +102,25 @@
                 <!--Technology Nav -->
                 <nav class="block mx-auto lg:w-[51.11%] md:w-[83.33%] lg:ml-0">
                     <ul class="flex lg:flex-col w-full items-center justify-center gap-8">
-                        <li id="one"
+                        <li
                             class="group flex border border-white/50 w-10 h-10 md:w-14 md:h-14 lg:w-20 lg:h-20 rounded-full overflow-hidden hover:border-white">
-                            <button data-tech-btn
+                            <button data-tech-btn id="launch"
                                 class="flex items-center justify-center text-[18px] text-white leading-[auto] uppercase  group-[.isActive]:bg-white group-[.isActive]:text-blue-900 w-full h-full cursor-pointer">
                                 1
                             </button>
 
                         </li>
-                        <li id="two"
+                        <li
                             class="group flex border border-white/50 w-10 h-10 md:w-14 md:h-14 lg:w-20 lg:h-20 rounded-full overflow-hidden hover:border-white">
-                            <button data-tech-btn
+                            <button data-tech-btn id="spaceport"
                                 class="flex items-center justify-center text-[18px] text-white leading-[auto] uppercase  group-[.isActive]:bg-white group-[.isActive]:text-blue-900 w-full h-full cursor-pointer">
                                 2
                             </button>
 
                         </li>
-                        <li id="three"
+                        <li
                             class="group flex border border-white/50 w-10 h-10 md:w-14 md:h-14 lg:w-20 lg:h-20 rounded-full overflow-hidden hover:border-white">
-                            <button data-tech-btn
+                            <button data-tech-btn id="capsule"
                                 class="flex items-center justify-center text-[18px] text-white leading-[auto] uppercase group-[.isActive]:bg-white group-[.isActive]:text-blue-900 w-full h-full cursor-pointer">
                                 3
                             </button>

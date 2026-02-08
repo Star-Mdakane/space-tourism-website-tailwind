@@ -3,15 +3,7 @@ const buttons = document.querySelectorAll("[data-tech-btn]");
 const links = document.querySelectorAll("nav a");
 const img = document.getElementById("tech-img");
 const description = document.getElementById("tech-description");
-const member = document.getElementById("tech-terminology");
-
-buttons.forEach(btn => {
-    btn.addEventListener("click", () => {
-        buttons.forEach(button => button.parentElement.classList.remove("isActive"));
-        btn.parentElement.classList.add("isActive");
-    })
-});
-
+const terminology = document.getElementById("tech-terminology");
 
 links.forEach(link => {
     if (link.href.includes(currentPage)) {
@@ -39,6 +31,20 @@ async function loadData() {
 
 loadData();
 
-const loadTechnology = (tech) => {
-    console.log(tech);
+const loadTechnology = (technology) => {
+
+    buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            buttons.forEach(button => button.parentElement.classList.remove("isActive"));
+            btn.parentElement.classList.add("isActive");
+
+            const targetId = btn.id;
+            const tech = technology.find(t => t.name.toLowerCase().includes(targetId.toLowerCase()));
+
+            console.log(tech);
+            img.src = tech.images.portrait;
+            description.textContent = tech.description;
+            terminology.textContent = tech.name;
+        })
+    })
 }
