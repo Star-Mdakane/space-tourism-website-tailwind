@@ -5,6 +5,9 @@ const img = document.getElementById("crew-img");
 const description = document.getElementById("crew-description");
 const member = document.getElementById("crew-member");
 const rank = document.getElementById("crew-rank");
+const menuBtn = document.getElementById("menu-btn");
+const closeBtn = document.getElementById("close-btn");
+const menu = document.getElementById("menu");
 
 
 links.forEach(link => {
@@ -52,3 +55,11 @@ const loadCrew = (crews) => {
         })
     });
 };
+
+menuBtn.addEventListener("click", () => {
+    menu.parentElement.classList.add("open")
+})
+
+closeBtn.addEventListener("click", () => {
+    menu.parentElement.classList.remove("open");
+})

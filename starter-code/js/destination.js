@@ -6,6 +6,9 @@ const description = document.getElementById("destination-description");
 const title = document.getElementById("destination-title");
 const distance = document.getElementById("destination-distance");
 const time = document.getElementById("destination-time");
+const menuBtn = document.getElementById("menu-btn");
+const closeBtn = document.getElementById("close-btn");
+const menu = document.getElementById("menu");
 
 links.forEach(link => {
     if (link.href.includes(currentPage)) {
@@ -53,4 +56,12 @@ const loadDestination = (destinations) => {
             time.textContent = dest.travel;
         })
     });
-} 
+}
+
+menuBtn.addEventListener("click", () => {
+    menu.parentElement.classList.add("open")
+})
+
+closeBtn.addEventListener("click", () => {
+    menu.parentElement.classList.remove("open");
+})

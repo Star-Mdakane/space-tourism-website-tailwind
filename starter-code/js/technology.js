@@ -4,6 +4,9 @@ const links = document.querySelectorAll("nav a");
 const img = document.getElementById("tech-img");
 const description = document.getElementById("tech-description");
 const terminology = document.getElementById("tech-terminology");
+const menuBtn = document.getElementById("menu-btn");
+const closeBtn = document.getElementById("close-btn");
+const menu = document.getElementById("menu");
 
 links.forEach(link => {
     if (link.href.includes(currentPage)) {
@@ -48,3 +51,11 @@ const loadTechnology = (technology) => {
         })
     })
 }
+
+menuBtn.addEventListener("click", () => {
+    menu.parentElement.classList.add("open")
+})
+
+closeBtn.addEventListener("click", () => {
+    menu.parentElement.classList.remove("open");
+})
