@@ -30,16 +30,6 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/Star-Mdakane/space-tourism-website-tailwind.git)
@@ -64,6 +54,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 8. I started with the destinations page, not hard but I had to remeber the find to return the array which has the Id of the link that I have clicked.
 9. On the crew page the problem was that the image was a bg image instead of an image so I had trouble removing or replacing the string to add it to bg image, so I changed it.
 10. On the tech page I Aalso had to change the image type but there was a little gotcha, where the image name on the json file changed.
+11. The sliding nav was problematic which had a scroll x but after trying moving element, adding a div and all. I did a lil research and used position fixed which seems to work.
+12. I did not notice the font Barlow but went back to correct it.
+13. Still the focus ring and/or outline will not go away though at some pages it disappeared.
 
 
 ### Built with
