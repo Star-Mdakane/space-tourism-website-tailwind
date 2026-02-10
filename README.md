@@ -40,18 +40,18 @@ Users should be able to:
 2. My approach will be to have 4 html pages and use 4 JS pages only. Having 1 JS page seems straightforwward so I want to learn using multiple JS pages also.
 3. I first designed the home page using tailwind mobile first
 - Problems encountered:
--Getting to display the background I mages. I thought my root was the html page whilst it was the css I output so it kept on giving me 404 till I checked te dev tools and network section.
+-Getting to display the background Images. I thought my root was the html page whilst it was the css I output so it kept on giving me 404 till I checked te dev tools and network section.
 -The nav underline I tried using after psuedo and failed till I went to group.
 -The hover on the home image I tried using box shadow bbut to no avail, so I used a ring instead.
 2. Moving on to the other pages
 - After designing the main home page I will be using it's skeleton to design the base structures of the other 3 pages and take it from there.
 4. Just redid the home page since it was off from the other pages. Though some weird screen sizes do not work but most of them do.
 5. After a few days with my display breaking at certain breakpoints.
-- Firstly it was the backround image. I had placed it on the main display div and it kept breaking at height about 850px and moved it to the bod tag which resolved the issue
+- Firstly it was the backround image. I had placed it on the main display div and it kept breaking at height about 850px and moved it to the body tag which resolved the issue
 - Then it was breaking at a width and I initially thought it was some strange screen sizes but found out it was breaking at large breakpoint. After a bit of troubleshooting I discovered that it was the nav which was breaking the display. I changed the width of the nav from a percentage value to auto which seems to have fixed the problem.
 6. I dopn't know if technology was simple or I am getting used to this but I had no challenges and it took way less time to complete.
 7. Next up was the script. First I tried to load fetch from home page js and that I would be able to use the functions inside that script but it is not possible, so I had to move the fetch to every single script.
-8. I started with the destinations page, not hard but I had to remeber the find to return the array which has the Id of the link that I have clicked.
+8. I started with the destinations page, not hard but I had to remember the find to return the array which has the Id of the link that I have clicked.
 9. On the crew page the problem was that the image was a bg image instead of an image so I had trouble removing or replacing the string to add it to bg image, so I changed it.
 10. On the tech page I Aalso had to change the image type but there was a little gotcha, where the image name on the json file changed.
 11. The sliding nav was problematic which had a scroll x but after trying moving element, adding a div and all. I did a lil research and used position fixed which seems to work.

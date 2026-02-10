@@ -558,9 +558,6 @@
     --tw-tracking: 2px;
     letter-spacing: 2px;
   }
-  .text-blue-300 {
-    color: var(--color-blue-300);
-  }
   .text-blue-900 {
     color: var(--color-blue-900);
   }
