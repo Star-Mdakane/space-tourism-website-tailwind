@@ -11,6 +11,11 @@ const closeBtn = document.getElementById("close-btn");
 const menu = document.getElementById("menu");
 
 links.forEach(link => {
+  link.parentElement.classList.remove("isActive");
+  link.removeAttribute("aria-current");
+});
+
+links.forEach(link => {
     if (link.href.includes(currentPage)) {
         link.parentElement.classList.add("isActive");
         link.setAttribute("aria-current", "page");
